@@ -40,7 +40,16 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+- Repo-local context is resolved from the repository containing `.specify`.
+- All execution paths in this plan are absolute where commands need them.
+- Feature traceability is defined for branch context and the persisted
+  `feature.json` directory.
+- All `NEEDS CLARIFICATION` items are converted into research tasks and resolved
+  before Phase 1 completes.
+- User stories remain independently testable and can be implemented as
+  incremental delivery slices.
+- Any constitution violation is recorded in `## Complexity Tracking` with a
+  justification and rejected simpler alternative.
 
 ## Project Structure
 

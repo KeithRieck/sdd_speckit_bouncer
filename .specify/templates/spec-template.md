@@ -8,6 +8,13 @@
 
 **Input**: User description: "$ARGUMENTS"
 
+## Constitutional Alignment *(mandatory)*
+
+- **Feature Directory**: [Resolved spec directory, e.g., `specs/001-example-feature`]
+- **Branch Context**: [Current branch name or explicit override, if applicable]
+- **Story Independence Strategy**: [How each user story can be implemented and
+  validated on its own]
+
 ## User Scenarios & Testing *(mandatory)*
 
 <!--
@@ -129,3 +136,5 @@
 - [Assumption about scope boundaries, e.g., "Mobile support is out of scope for v1"]
 - [Assumption about data/environment, e.g., "Existing authentication system will be reused"]
 - [Dependency on existing system/service, e.g., "Requires access to the existing user profile API"]
+- [Traceability assumption, e.g., "Feature directory remains the source of truth
+  even if the branch name differs"]
