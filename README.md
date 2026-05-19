@@ -13,3 +13,8 @@ This trivial project was developed with [Github Spec-kit](https://github.com/git
     * Creates the file `specs/001-pwa-bouncing-circles/checklists/requirements.md`
     * Creates the file `specs/001-pwa-bouncing-circles/spec.md`
     * I edit the spec and requirements documents.
+4. $speckit-plan
+    * Creates the file `specs/001-pwa-bouncing-circles/checklists/plan.md`
+    * The plan already specifies that the language will be ES2022.  I update the plan to specify that it should user Phaser 3.x.
+    * I update the data-model to specify that the circles should have a radius of 50 pixels.
+5. $speckit-tasks
