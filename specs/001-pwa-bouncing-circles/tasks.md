@@ -27,9 +27,9 @@ use exact file paths, and keep each user story independently deliverable.
 
 **Purpose**: Project initialization and basic structure
 
-- [ ] T001 Create the Phaser PWA project scaffold in package.json, index.html, styles.css, src/, public/icons/, and service-worker.js
-- [ ] T002 [P] Add npm scripts and Phaser dependency configuration in package.json
-- [ ] T003 [P] Create placeholder PWA metadata and icon assets in public/manifest.webmanifest, public/icons/icon-192.png, and public/icons/icon-512.png
+- [X] T001 Create the Phaser PWA project scaffold in package.json, index.html, styles.css, src/, public/icons/, and service-worker.js
+- [X] T002 [P] Add npm scripts and Phaser dependency configuration in package.json
+- [X] T003 [P] Create placeholder PWA metadata and icon assets in public/manifest.webmanifest, public/icons/icon-192.png, and public/icons/icon-512.png
 
 ---
 
@@ -39,12 +39,12 @@ use exact file paths, and keep each user story independently deliverable.
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T004 Create the application bootstrap and root DOM mount in index.html and src/main.js
-- [ ] T005 [P] Implement the Phaser game configuration and resize-aware scene bootstrapping in src/main.js
-- [ ] T006 [P] Implement shared simulation primitives for circle creation, velocity, bounds correction, and 64-entity state management in src/simulation.js
-- [ ] T007 [P] Implement PWA registration helpers and launch-context detection in src/pwa.js
-- [ ] T008 Create app-wide styling for a full-page single-screen presentation in styles.css
-- [ ] T009 Configure offline app-shell caching and root-route navigation handling in service-worker.js and public/manifest.webmanifest
+- [X] T004 Create the application bootstrap and root DOM mount in index.html and src/main.js
+- [X] T005 [P] Implement the Phaser game configuration and resize-aware scene bootstrapping in src/main.js
+- [X] T006 [P] Implement shared simulation primitives for circle creation, velocity, bounds correction, and 64-entity state management in src/simulation.js
+- [X] T007 [P] Implement PWA registration helpers and launch-context detection in src/pwa.js
+- [X] T008 Create app-wide styling for a full-page single-screen presentation in styles.css
+- [X] T009 Configure offline app-shell caching and root-route navigation handling in service-worker.js and public/manifest.webmanifest
 
 **Checkpoint**: Foundation ready - user story implementation can now begin in parallel
 
@@ -58,12 +58,12 @@ use exact file paths, and keep each user story independently deliverable.
 
 ### Implementation for User Story 1
 
-- [ ] T010 [P] [US1] Create the Phaser Circle sprite/entity implementation with 50px radius behavior in src/entities/CircleSprite.js
-- [ ] T011 [P] [US1] Create the main demo scene that instantiates exactly 64 circles in src/scenes/BouncingCirclesScene.js
-- [ ] T012 [US1] Wire the demo scene into the Phaser bootstrap in src/main.js
-- [ ] T013 [US1] Implement per-frame bouncing updates and edge reversal logic in src/simulation.js and src/scenes/BouncingCirclesScene.js
-- [ ] T014 [US1] Tune visuals for full-page presentation, circle visibility, and background contrast in styles.css and src/scenes/BouncingCirclesScene.js
-- [ ] T015 [US1] Validate the MVP flow against the User Story 1 steps and record any required quickstart adjustments in specs/001-pwa-bouncing-circles/quickstart.md
+- [X] T010 [P] [US1] Create the Phaser Circle sprite/entity implementation with 50px radius behavior in src/entities/CircleSprite.js
+- [X] T011 [P] [US1] Create the main demo scene that instantiates exactly 64 circles in src/scenes/BouncingCirclesScene.js
+- [X] T012 [US1] Wire the demo scene into the Phaser bootstrap in src/main.js
+- [X] T013 [US1] Implement per-frame bouncing updates and edge reversal logic in src/simulation.js and src/scenes/BouncingCirclesScene.js
+- [X] T014 [US1] Tune visuals for full-page presentation, circle visibility, and background contrast in styles.css and src/scenes/BouncingCirclesScene.js
+- [X] T015 [US1] Validate the MVP flow against the User Story 1 steps and record any required quickstart adjustments in specs/001-pwa-bouncing-circles/quickstart.md
 
 **Checkpoint**: At this point, User Story 1 should be fully functional and testable independently
 
@@ -77,11 +77,11 @@ use exact file paths, and keep each user story independently deliverable.
 
 ### Implementation for User Story 2
 
-- [ ] T016 [P] [US2] Finalize installable app metadata, launch mode, theme, and icon references in public/manifest.webmanifest
-- [ ] T017 [P] [US2] Implement service worker asset pre-caching and offline shell recovery for index.html, styles.css, src/main.js, src/pwa.js, and service-worker.js
-- [ ] T018 [US2] Connect installed-app launch handling and service worker registration in src/pwa.js and src/main.js
-- [ ] T019 [US2] Ensure the root launch path restores the demo immediately for both browser and installed contexts in index.html, src/main.js, and service-worker.js
-- [ ] T020 [US2] Validate install and offline launch behavior, then update the verification notes in specs/001-pwa-bouncing-circles/quickstart.md
+- [X] T016 [P] [US2] Finalize installable app metadata, launch mode, theme, and icon references in public/manifest.webmanifest
+- [X] T017 [P] [US2] Implement service worker asset pre-caching and offline shell recovery for index.html, styles.css, src/main.js, src/pwa.js, and service-worker.js
+- [X] T018 [US2] Connect installed-app launch handling and service worker registration in src/pwa.js and src/main.js
+- [X] T019 [US2] Ensure the root launch path restores the demo immediately for both browser and installed contexts in index.html, src/main.js, and service-worker.js
+- [X] T020 [US2] Validate install and offline launch behavior, then update the verification notes in specs/001-pwa-bouncing-circles/quickstart.md
 
 **Checkpoint**: At this point, User Stories 1 AND 2 should both work independently
 
@@ -95,11 +95,11 @@ use exact file paths, and keep each user story independently deliverable.
 
 ### Implementation for User Story 3
 
-- [ ] T021 [P] [US3] Implement viewport resize handling and scene rescaling logic in src/main.js and src/scenes/BouncingCirclesScene.js
-- [ ] T022 [US3] Clamp and rebalance circle positions after viewport changes in src/simulation.js
-- [ ] T023 [US3] Ensure refresh and relaunch always recreate a valid 64-circle simulation state in src/main.js, src/scenes/BouncingCirclesScene.js, and src/pwa.js
-- [ ] T024 [US3] Handle unsupported installation contexts and background/foreground recovery gracefully in src/pwa.js and service-worker.js
-- [ ] T025 [US3] Re-run the resize and relaunch scenarios and update the operational guidance in specs/001-pwa-bouncing-circles/quickstart.md and specs/001-pwa-bouncing-circles/contracts/app-behavior.md
+- [X] T021 [P] [US3] Implement viewport resize handling and scene rescaling logic in src/main.js and src/scenes/BouncingCirclesScene.js
+- [X] T022 [US3] Clamp and rebalance circle positions after viewport changes in src/simulation.js
+- [X] T023 [US3] Ensure refresh and relaunch always recreate a valid 64-circle simulation state in src/main.js, src/scenes/BouncingCirclesScene.js, and src/pwa.js
+- [X] T024 [US3] Handle unsupported installation contexts and background/foreground recovery gracefully in src/pwa.js and service-worker.js
+- [X] T025 [US3] Re-run the resize and relaunch scenarios and update the operational guidance in specs/001-pwa-bouncing-circles/quickstart.md and specs/001-pwa-bouncing-circles/contracts/app-behavior.md
 
 **Checkpoint**: All user stories should now be independently functional
 
@@ -109,9 +109,9 @@ use exact file paths, and keep each user story independently deliverable.
 
 **Purpose**: Improvements that affect multiple user stories
 
-- [ ] T026 [P] Document the final local run workflow and project structure in README.md
-- [ ] T027 [P] Optimize asset references and cache versioning consistency across public/manifest.webmanifest, service-worker.js, and src/pwa.js
-- [ ] T028 Run the full quickstart validation flow and capture any final corrections in specs/001-pwa-bouncing-circles/quickstart.md
+- [X] T026 [P] Document the final local run workflow and project structure in README.md
+- [X] T027 [P] Optimize asset references and cache versioning consistency across public/manifest.webmanifest, service-worker.js, and src/pwa.js
+- [X] T028 Run the full quickstart validation flow and capture any final corrections in specs/001-pwa-bouncing-circles/quickstart.md
 
 ---
 

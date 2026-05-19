@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    >
+    <title>PWA Bouncing Circles Demo</title>
+    <meta
+      name="description"
+      content="An installable Phaser demo with 64 bouncing circles."
+    >
+    <meta name="theme-color" content="#102542">
+    <link rel="manifest" href="./public/manifest.webmanifest">
+    <link rel="icon" href="./public/icons/icon-192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="./public/icons/icon-192.png">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero-copy" aria-label="Demo instructions">
+        <p class="eyebrow">Installable Demo</p>
+        <h1>64 circles. One screen. No dead air.</h1>
+        <p class="deck">
+          Open the app and the motion begins immediately. Install it when your
+          browser supports it, then relaunch into the same full-page scene.
+        </p>
+      </section>
+      <div id="game-root" aria-label="Bouncing circles demonstration"></div>
+      <button id="install-app" class="install-button" type="button" hidden>
+        Install App
+      </button>
+      <p id="launch-mode" class="launch-badge" aria-live="polite"></p>
+    </main>
+    <noscript>
+      This demo needs JavaScript enabled to render the bouncing circles.
+    </noscript>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

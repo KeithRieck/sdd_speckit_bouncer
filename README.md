@@ -21,4 +21,8 @@ Spec-kit is definitely overkill for this kind of app.
     * I update the data-model to specify that the circles should have a radius of 50 pixels.
 5. $speckit-tasks
     * Creates the file `specs/001-pwa-bouncing-circles/tasks.md`
+6. $speckit-implement
+    * Creates the code, HTML, css
+    * Codex tried to run Google Chrome, but that crashed.  It tried to run "Headless" Chrome, but then requested permission to update applications on my machine.  I told it to skip this step.
+
     

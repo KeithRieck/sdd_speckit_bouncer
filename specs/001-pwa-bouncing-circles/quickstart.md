@@ -3,14 +3,15 @@
 ## Prerequisites
 
 - A modern browser with JavaScript enabled
+- Local project dependencies installed with `npm install`
 - A local static file server started from the repository root
 
 ## Run Locally
 
-1. Start a static server from `/Volumes/SSD/Documents/sdd_speckit_bouncer`.
-   Example: `python3 -m http.server 8000`
-2. Open `http://localhost:8000/` in a modern browser.
-3. Confirm the first screen is the bouncing circles demo.
+1. Run `npm install` from `/Volumes/SSD/Documents/sdd_speckit_bouncer`.
+2. Start a static server with `npm run serve`.
+3. Open `http://localhost:8000/` in a modern browser.
+4. Confirm the first screen is the bouncing circles demo.
 
 ## Validate User Story 1
 
@@ -28,6 +29,8 @@
 4. Confirm the demo opens directly into the animated scene.
 5. Disable network access after the initial install and confirm the app shell
    still opens into a usable first screen.
+6. If no install surface is offered, confirm the browser still presents the
+   same demo without errors.
 
 ## Validate User Story 3
 
@@ -42,3 +45,5 @@
 - Exact motion paths do not need to persist across refresh or relaunch.
 - Installation behavior may vary by browser, but unsupported browsers must still
   show the browser-based demo successfully.
+- The shipped runtime is vendored locally in `vendor/phaser.esm.js` so the core
+  demo does not depend on a CDN at run time.

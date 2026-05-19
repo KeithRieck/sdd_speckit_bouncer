@@ -1,0 +1,141 @@
+:root {
+  color-scheme: dark;
+  --bg-top: #102542;
+  --bg-bottom: #0b132b;
+  --panel: rgba(9, 16, 34, 0.74);
+  --line: rgba(255, 255, 255, 0.14);
+  --text: #f7f7ff;
+  --muted: #c9d6ea;
+  --accent: #ffb703;
+  --accent-2: #8ecae6;
+  --shadow: 0 22px 60px rgba(0, 0, 0, 0.35);
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  background:
+    radial-gradient(circle at top left, rgba(142, 202, 230, 0.18), transparent 34%),
+    radial-gradient(circle at bottom right, rgba(255, 183, 3, 0.18), transparent 28%),
+    linear-gradient(180deg, var(--bg-top), var(--bg-bottom));
+  color: var(--text);
+}
+
+body {
+  min-height: 100vh;
+}
+
+.app-shell {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.hero-copy {
+  position: absolute;
+  z-index: 5;
+  top: 1rem;
+  left: 1rem;
+  max-width: min(30rem, calc(100vw - 2rem));
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: 1.25rem;
+  background: var(--panel);
+  backdrop-filter: blur(16px);
+  box-shadow: var(--shadow);
+}
+
+.eyebrow {
+  margin: 0 0 0.45rem;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.hero-copy h1 {
+  margin: 0;
+  font-size: clamp(1.8rem, 3vw, 3.8rem);
+  line-height: 0.96;
+}
+
+.deck {
+  margin: 0.75rem 0 0;
+  font-size: 0.98rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+#game-root {
+  min-height: 100vh;
+}
+
+#game-root canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.install-button,
+.launch-badge {
+  position: absolute;
+  z-index: 5;
+  bottom: 1rem;
+  border-radius: 999px;
+  box-shadow: var(--shadow);
+}
+
+.install-button {
+  right: 1rem;
+  padding: 0.9rem 1.2rem;
+  border: 0;
+  background: linear-gradient(135deg, var(--accent), #fb8500);
+  color: #1a1f2b;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.launch-badge {
+  left: 1rem;
+  margin: 0;
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--line);
+  background: rgba(6, 11, 24, 0.72);
+  color: var(--muted);
+}
+
+@media (max-width: 700px) {
+  .hero-copy {
+    top: 0.75rem;
+    left: 0.75rem;
+    right: 0.75rem;
+    max-width: none;
+    padding: 0.9rem 1rem;
+  }
+
+  .deck {
+    font-size: 0.92rem;
+  }
+
+  .install-button,
+  .launch-badge {
+    bottom: 0.75rem;
+  }
+
+  .install-button {
+    right: 0.75rem;
+  }
+
+  .launch-badge {
+    left: 0.75rem;
+    max-width: 12rem;
+  }
+}
