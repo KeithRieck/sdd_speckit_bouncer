@@ -12,3 +12,4 @@ This trivial project was developed with [Github Spec-kit](https://github.com/git
     * Initializes git inside the project and creates a feature branch.
     * Creates the file `specs/001-pwa-bouncing-circles/checklists/requirements.md`
     * Creates the file `specs/001-pwa-bouncing-circles/spec.md`
+    * I edit the spec and requirements documents.

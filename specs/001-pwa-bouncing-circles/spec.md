@@ -21,7 +21,7 @@
 
 ### User Story 1 - Watch the Bouncing Demo (Priority: P1)
 
-A visitor opens the app and immediately sees a full-page animated demonstration
+A user visits the web page and immediately sees a full-page animated demonstration
 with exactly 64 circles moving and bouncing within the visible space.
 
 **Why this priority**: The animated graphics demonstration is the primary value
@@ -34,7 +34,7 @@ without user setup.
 
 **Acceptance Scenarios**:
 
-1. **Given** a visitor opens the app for the first time, **When** the initial
+1. **Given** a user visits the page for the first time, **When** the initial
    screen loads, **Then** the page shows a graphics demonstration with 64
    circles moving across the available display area.
 2. **Given** the animation is running, **When** a circle reaches any visible
