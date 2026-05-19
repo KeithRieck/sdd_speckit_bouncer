@@ -1,4 +1,3 @@
-import Phaser from "../../vendor/phaser.esm.js";
 import { CircleSprite } from "../entities/CircleSprite.js";
 import { createCircleConfigs, getCircleCount, resizeCircleSet } from "../simulation.js";
 

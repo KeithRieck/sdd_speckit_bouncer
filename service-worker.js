@@ -1,4 +1,5 @@
-const CACHE_NAME = "pwa-bouncing-circles-v1";
+const CACHE_NAME = "pwa-bouncing-circles-v2";
+const PHASER_CDN = "https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser-arcade-physics.min.js";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -13,7 +14,7 @@ const APP_SHELL = [
   "./public/manifest.webmanifest",
   "./public/icons/icon-192.png",
   "./public/icons/icon-512.png",
-  "./vendor/phaser.esm.js"
+  PHASER_CDN
 ];
 
 self.addEventListener("install", (event) => {

@@ -1,4 +1,3 @@
-import Phaser from "../../vendor/phaser.esm.js";
 import { Bouncer } from "../game/Bouncer.js";
 
 const TEXTURE_KEY = "circle-sprite-texture";

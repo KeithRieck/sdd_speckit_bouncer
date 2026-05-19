@@ -24,5 +24,8 @@ Spec-kit is definitely overkill for this kind of app.
 6. $speckit-implement
     * Creates the code, HTML, css
     * Codex tried to run Google Chrome, but that crashed.  It tried to run "Headless" Chrome, but then requested permission to update applications on my machine.  I told it to skip this step.
+7. The resulting app doesn't work because of module problems and importing `phaser.esm.js`.   I tell Codex:
+    * Change the project so that instead of using the local copy of phaser.esm.js, it loads Phaser from a CDN
+    
 
     

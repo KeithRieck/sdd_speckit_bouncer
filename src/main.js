@@ -1,4 +1,3 @@
-import Phaser from "../vendor/phaser.esm.js";
 import { BootScene } from "./scenes/BootScene.js";
 import { BouncingCirclesScene } from "./scenes/BouncingCirclesScene.js";
 import { bindInstallButton, detectLaunchMode, registerServiceWorker } from "./pwa.js";

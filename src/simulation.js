@@ -1,5 +1,5 @@
 const CIRCLE_COUNT = 64;
-const CIRCLE_RADIUS = 50;
+const CIRCLE_RADIUS = 25;
 const PALETTE = [
   0xffb703,
   0xfb8500,
