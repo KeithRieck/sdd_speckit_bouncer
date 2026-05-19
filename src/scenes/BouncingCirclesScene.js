@@ -1,4 +1,4 @@
-import { CircleSprite } from "../entities/CircleSprite.js";
+import { CircleSprite } from "../game/CircleSprite.js";
 import { createCircleConfigs, getCircleCount, resizeCircleSet } from "../simulation.js";
 
 export class BouncingCirclesScene extends Phaser.Scene {

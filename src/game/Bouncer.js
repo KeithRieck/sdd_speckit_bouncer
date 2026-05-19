@@ -1,13 +1,14 @@
-export class Bouncer {
-  constructor({ x, y, vx, vy, radius }) {
-    this.x = x;
-    this.y = y;
-    this.vx = vx;
-    this.vy = vy;
-    this.radius = radius;
+export class Bouncer extends Phaser.GameObjects.Sprite {
+  constructor(scene, config, textureKey) {
+    super(scene, config.x, config.y, textureKey);
+    this.id = config.id;
+    this.radius = config.radius;
+    this.vx = config.vx;
+    this.vy = config.vy;
+    scene.add.existing(this);
   }
 
-  step(deltaSeconds, width, height) {
+  updateMotion(deltaSeconds, width, height) {
     const nextX = this.x + this.vx * deltaSeconds;
     const nextY = this.y + this.vy * deltaSeconds;
 
@@ -22,13 +23,13 @@ export class Bouncer {
       this.vy *= -1;
     }
 
-    this.x = clampedX;
-    this.y = clampedY;
+    this.setPosition(clampedX, clampedY);
   }
 
   clampToBounds(width, height) {
-    this.x = clamp(this.x, this.radius, Math.max(this.radius, width - this.radius));
-    this.y = clamp(this.y, this.radius, Math.max(this.radius, height - this.radius));
+    const clampedX = clamp(this.x, this.radius, Math.max(this.radius, width - this.radius));
+    const clampedY = clamp(this.y, this.radius, Math.max(this.radius, height - this.radius));
+    this.setPosition(clampedX, clampedY);
   }
 }
 

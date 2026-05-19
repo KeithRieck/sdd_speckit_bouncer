@@ -2,29 +2,14 @@ import { Bouncer } from "../game/Bouncer.js";
 
 const TEXTURE_KEY = "circle-sprite-texture";
 
-export class CircleSprite extends Phaser.GameObjects.Sprite {
+export class CircleSprite extends Bouncer {
   constructor(scene, config) {
     ensureTexture(scene, config.radius);
-    super(scene, config.x, config.y, TEXTURE_KEY);
-
-    this.motion = new Bouncer(config);
-    this.id = config.id;
-    this.radius = config.radius;
+    super(scene, config, TEXTURE_KEY);
 
     this.setDisplaySize(config.radius * 2, config.radius * 2);
     this.setTint(config.color);
     this.setAlpha(0.94);
-    scene.add.existing(this);
-  }
-
-  updateMotion(deltaSeconds, width, height) {
-    this.motion.step(deltaSeconds, width, height);
-    this.setPosition(this.motion.x, this.motion.y);
-  }
-
-  clampToBounds(width, height) {
-    this.motion.clampToBounds(width, height);
-    this.setPosition(this.motion.x, this.motion.y);
   }
 }
 

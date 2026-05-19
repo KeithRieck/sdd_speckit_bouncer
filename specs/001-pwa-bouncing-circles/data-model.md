@@ -17,7 +17,7 @@
 **Validation Rules**:
 
 - Exactly 64 circle records MUST exist while the simulation is active.
-- `radius` MUST be 50 pixels.
+- `radius` MUST be 25 pixels.
 - Initial and corrected positions MUST keep the entire circle inside the demo
   surface bounds.
 - Velocity MUST be non-zero on at least one axis so circles visibly move.
