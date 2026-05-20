@@ -9,18 +9,18 @@ Spec-kit is definitely overkill for this kind of app.  My main interest is to le
 1. Download and setup:
     * `uvx --from git+https://github.com/github/spec-kit.git specify init sdd_speckit_bouncer`
 2. $speckit-constitution
-    * Creates the file `.specify/memory/constitution.md`
+    * Creates the file [constitution.md](.specify/memory/constitution.md)
 3. $speckit-specify Create a Progressive Web Application with a graphics demonstration showing 64 circles bouncing across the page.
     * Initializes git inside the project and creates a feature branch.
-    * Creates the file `specs/001-pwa-bouncing-circles/checklists/requirements.md`
-    * Creates the file `specs/001-pwa-bouncing-circles/spec.md`
+    * Creates the file [requirements.md](specs/001-pwa-bouncing-circles/checklists/requirements.md)
+    * Creates the file [spec.md](specs/001-pwa-bouncing-circles/spec.md)
     * I edit the spec and requirements documents.
 4. $speckit-plan
-    * Creates the file `specs/001-pwa-bouncing-circles/checklists/plan.md`
+    * Creates the file [plan.md](specs/001-pwa-bouncing-circles/checklists/plan.md)
     * The plan already specifies that the language will be ES2022.  I update the plan to specify that it should user Phaser 3.x.
     * I update the data-model to specify that the circles should have a radius of 25 pixels.
 5. $speckit-tasks
-    * Creates the file `specs/001-pwa-bouncing-circles/tasks.md`
+    * Creates the file [tasks.md](specs/001-pwa-bouncing-circles/tasks.md)
 6. $speckit-implement
     * Creates the code, HTML, css
     * Codex tried to run Google Chrome, but that crashed.  It tried to run "Headless" Chrome, but then requested permission to update applications on my machine.  I told it to skip this step.
